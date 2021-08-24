@@ -35,7 +35,9 @@ if predicted_value != real_value:
         dif_percent = res_1 - 100
         dif_percent_res = 100 - dif_percent
         print(f"El porcentaje de Precisión del valor estimado es: {dif_percent_res}")
-
+    elif res_1 < 100:
+        print(f"El porcentaje de Precisión del valor estimado es: {res_1}")
+        
     print(f"El valor que predijo el algoritmo es: {predicted_value}")
     print(f"El valor real es: {real_value}")
     print(f"La diferencia es de {abs(predicted_value-real_value)}")
