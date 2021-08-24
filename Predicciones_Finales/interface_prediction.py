@@ -39,5 +39,4 @@ def textoDeTemperatura():
 
 boton2 = tkinter.Button(ventana, text = "Predecir Temperatura", command = textoDeTemperatura, font='Raleway', bg="#20bebe", fg="white", height=2, width=20)
 boton2.pack()
-
 ventana.mainloop()
