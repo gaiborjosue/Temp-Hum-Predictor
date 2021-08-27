@@ -6,7 +6,7 @@ from sklearn import linear_model
 import joblib
 
 df = pd.read_csv(
-    "Predicciones_Finales\\th_station_1st_data.csv", delimiter=",")
+    "Predicciones_Finales\\Data\\th_station_2nd_data.csv", delimiter=",")
 
 x = df[["field2"]]
 y = df[["field1"]]
@@ -16,7 +16,7 @@ X_train, X_test, y_train, y_test = train_test_split(x, y, test_size=0.3)
 reg_2 = linear_model.LinearRegression()
 reg_2.fit(X_train, y_train)
 
-joblib.dump(reg_2, 'temp_predictor.joblib')
+joblib.dump(reg_2, 'Predicciones_Finales\\Models\\2nd_release\\temp_predictor.joblib')
 
 # predict_hum = reg.predict(X_test)
 # print(predict_hum)

@@ -3,7 +3,7 @@ import argparse
 from numpy import real
 import requests
 
-temp_predictor = joblib.load('Predicciones_Finales\\Models\\temp_predictor.joblib')
+temp_predictor = joblib.load('Predicciones_Finales\\Models\\2nd_release\\temp_predictor.joblib')
 
 get_data_1 = requests.get(
     "https://api.thingspeak.com/channels/1439127/fields/1.json?api_key=KDZ8NQ5X5GQBLD62&results=1")
